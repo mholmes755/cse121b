@@ -19,23 +19,23 @@ let myProfile = {
         'Watching Sports',
         'Reading'
     ],
-    placesLived: {}
+    placesLived: []
 };
 
 
 /* Populate Profile Object with placesLive objects */
 myProfile.placesLived.push(
     {
-        place: 'Jacksonville, FL',
-        length: '11 years'
+        place: 'Morehead City, NC',
+        length: '12 years'
     },
     {
-        place: 'Athens, Georiga',
-        length: '8 years'
+        place: 'Waynesboro, VA',
+        length: '9 years'
     },
     {
         place: 'Rexburg, ID',
-        length: '3 years'
+        length: '1 year'
     }
 )
 
@@ -53,14 +53,14 @@ imgElement.alt = myProfile.name;
 
 
 /* Favorite Foods List*/
-myProfile.favoriteFoods.forEach(food=> {
+myProfile.favoriteFoods.forEach(food => {
     let li = document.createElement('li');
     li.textContent = food;
     document.querySelector('#favorite-foods').appendChild(li);
 })
 
 /* Hobbies List */
-myProfile.hobbies.forEach(hobby=> {
+myProfile.hobbies.forEach(hobby => {
     let li = document.createElement('li');
     li.textContent = hobby;
     document.querySelector('#hobbies').appendChild(li);
@@ -68,12 +68,12 @@ myProfile.hobbies.forEach(hobby=> {
 
 
 /* Places Lived DataList */
-myProfile.placesLived.forEach(place, length => {
+myProfile.placesLived.forEach(placeObj => {
     let dt = document.createElement('dt');
-    dt.textContent = place;
+    dt.textContent = placeObj.place;
     let dd = document.createElement('dd');
-    dd.textContent = length;
+    dd.textContent = placeObj.length;
     document.querySelector('#places-lived').appendChild(dt);
     document.querySelector('#places-lived').appendChild(dd);
+    
 })
-
