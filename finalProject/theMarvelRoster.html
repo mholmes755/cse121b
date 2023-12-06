@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Marvel Roster</title>
+        <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1>The Marvel Roster</h1>
+    </header>
+    <main>
+        <select id="sortBy" title ="Choose a team">
+            <option value disabled selector></option>
+            <option value = "theAvengers">The Avengers</option>
+            <option value = "theGuardians">Guardians of the Galaxy</option>
+            <option value = "sinisterSix">The Sinister Six</option>
+            <option value = "mastersOfEvil">The Masters of Evil</option>
+        </select>
+        <div id = "teams">
+        </div>
+        
+    </main>
+    <footer>
+        - Michael Holmes - &copy;<span id="year"></span> | Week 6
+    </footer>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>
