@@ -1,0 +1,33 @@
+[
+    {
+        "teamName": "The Avengers",
+        "teamMotive": "Good",
+        "firstAppearance":"The Avengers #1 | 1963",
+        "imgUrl":"/images/avengersImg.png",
+        "members": "ironMan, hulk, thor, antMan, wasp"
+    },
+
+    {
+        "teamName": "The Guardians of the Galaxy",
+        "teamMotive": "Good",
+        "firstAppearance":"Marvel Super-Heroes #18 | 1969",
+        "imgUrl":"/images/guardiansOfTheGalaxy.png",
+        "members": "Vance Astro, Martinex T'Naga, Captain Charlie-27, Captain Nikki"
+    },
+
+    {
+        "teamName": "The Sinister Six",
+        "teamMotive": "Evil",
+        "firstAppearance":"The Amazing Spider-Man Annual #1 | 1964",
+        "imgUrl":"",
+        "members": "Doctor Octopus, Mysterio, Sandman, Kraven the Hunter, Vulture, Electro"
+    },
+
+    {
+        "teamName": "The Masters of Evil",
+        "teamMotive": "Evil",
+        "firstAppearance":"Avengers #6 | 1964",
+        "imgUrl":"/images/mastersOfEvilImg.png",
+        "members": "Baron Zemo, The Black Knight, Melter, Radioactive Man, Enchantress, Executioner"
+    }
+]
