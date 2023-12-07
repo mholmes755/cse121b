@@ -11,12 +11,12 @@ const displayTeams = (teams) =>
         h3.textContent = team.teamName;
 
 
-        let motive = document.createElement("p1");
-        p1.textContent = team.motive;
+        let motive = document.createElement("p");
+        motive.textContent = team.motive;
 
 
-        let first = document.createElement("p2");
-        p2.textContext = team.firstAppearance;
+        let first = document.createElement("p");
+        first.textContext = team.firstAppearance;
 
         let img = document.createElement("img");
         img.src = team.imgUrl;
@@ -33,9 +33,11 @@ const displayTeams = (teams) =>
 
 // getTeams Function uising Fetch
 const getTeams = async () => {
-  const response = await fetch();
+  const response = await fetch("https://mholmes755.github.io/CSE121B/finalProject/theMarvelRoster.json");
   teamList = await response.json();
   displayTeams(teamList);
 }
 
+
+getTeams();
 

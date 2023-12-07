@@ -3,7 +3,7 @@
         "teamName": "The Avengers",
         "teamMotive": "Good",
         "firstAppearance":"The Avengers #1 | 1963",
-        "imgUrl":"/images/avengersImg.png",
+        "imgUrl":"/images/avengers.png",
         "members": "ironMan, hulk, thor, antMan, wasp"
     },
 
@@ -19,7 +19,7 @@
         "teamName": "The Sinister Six",
         "teamMotive": "Evil",
         "firstAppearance":"The Amazing Spider-Man Annual #1 | 1964",
-        "imgUrl":"",
+        "imgUrl":"/images/sinisterSix.png",
         "members": "Doctor Octopus, Mysterio, Sandman, Kraven the Hunter, Vulture, Electro"
     },
 
@@ -27,7 +27,7 @@
         "teamName": "The Masters of Evil",
         "teamMotive": "Evil",
         "firstAppearance":"Avengers #6 | 1964",
-        "imgUrl":"/images/mastersOfEvilImg.png",
+        "imgUrl":"/images/mastersOfEvil.png",
         "members": "Baron Zemo, The Black Knight, Melter, Radioactive Man, Enchantress, Executioner"
     }
 ]
