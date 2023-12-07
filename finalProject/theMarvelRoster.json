@@ -4,8 +4,39 @@
         "teamMotive": "Good",
         "firstAppearance":"The Avengers #1 | 1963",
         "imgUrl":"/images/avengers.png",
-        "members": "ironMan, hulk, thor, antMan, wasp"
+        "members": "IronMan, Hulk, Thor, AntMan, Wasp"
     },
+
+            {
+
+                "memberName": "IronMan",
+                "memberAbilities": "Incredibly Smart, Super Rich, Electronic Armor, Flight, Energy Blasts, Fast Internet",
+                "alterEgo": "Tony Stark"
+            },
+
+            {
+                "memberName": "Hulk",
+                "memberAbilities": "Incredibly Smart, Super Strong, Strength grows the Angrier he gets, Immune to Gama Poisoning",
+                "alterEgo": "Bruce Banner"
+            },
+
+            {
+                "memberName": "Thor",
+                "memberAbilities": "Incredibly Strong, Flight, Slight Immunity to Magic, Power to control Lightning",
+                "alterEgo": "Thor Odenson"
+            },
+
+            {
+                "memberName": "AntMan",
+                "memberAbilities": "Incredibly Smart, Suit that allows him to shrink or grow the space between molecules so that he can shrink or grow in size",
+                "alterEgo": "Hank Pym"
+            },
+
+            {
+                "memberName": "Wasp",
+                "memberAbilities": "Incredibly Smart, Suit that allows her to shrink the space between molecules so that she can shrink in size, blasts of energy",
+                "alterEgo": "Hank Pym"
+            },
 
     {
         "teamName": "The Guardians of the Galaxy",
@@ -15,6 +46,34 @@
         "members": "Vance Astro, Martinex T'Naga, Captain Charlie-27, Captain Nikki"
     },
 
+        
+            {
+                "memberName": "Vance Astro",
+                "memberAbilities": "",
+                "alterEgo": "Hank Pym"
+            },
+
+            
+            {
+                "memberName": "Martinex T'Naga",
+                "memberAbilities": "",
+                "alterEgo": "Hank Pym"
+            },
+
+                
+        {
+            "memberName": "Captain Charlie-27",
+            "memberAbilities": "",
+            "alterEgo": "Hank Pym"
+        },
+
+        
+        {
+            "memberName": "Captain Nikki",
+            "memberAbilities": "",
+            "alterEgo": "Hank Pym"
+        },
+
     {
         "teamName": "The Sinister Six",
         "teamMotive": "Evil",
@@ -22,6 +81,43 @@
         "imgUrl":"/images/sinisterSix.png",
         "members": "Doctor Octopus, Mysterio, Sandman, Kraven the Hunter, Vulture, Electro"
     },
+
+            {
+                "memberName": "Doctor Octopus",
+                "memberAbilities": "",
+                "alterEgo": "Hank Pym"
+            },
+            
+            {
+                "memberName": "Mysterio",
+                "memberAbilities": "",
+                "alterEgo": "Hank Pym"
+            },
+
+            
+            {
+                "memberName": "Sandman",
+                "memberAbilities": "",
+                "alterEgo": "Hank Pym"
+            },
+
+            {
+                "memberName": "Kraven the Hunter",
+                "memberAbilities": "",
+                "alterEgo": "Hank Pym"
+            },
+
+            {
+                "memberName": "Vulture",
+                "memberAbilities": "",
+                "alterEgo": "Hank Pym"
+            },
+
+            {
+                "memberName": "Electro",
+                "memberAbilities": "",
+                "alterEgo": "Hank Pym"
+            },
 
     {
         "teamName": "The Masters of Evil",
