@@ -30,7 +30,7 @@ const displayTeams = (teams) =>{
         article.appendChild(img);
 
         teamsElement.appendChild(article);
-        console.log(article);
+        // console.log(article);
     });
 };
 
@@ -101,14 +101,10 @@ const sortBy = () =>{
 };
 
 
-
-
 // Selector Event Listener
 document.querySelector("#sortBy").addEventListener("change", ()=> {sortBy(teamList)});
 
-
 // Team Event Listener
-
 
 // Call main function
 getTeams();
