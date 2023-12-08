@@ -36,15 +36,15 @@ const displayTeams = (teams) =>{
 
 
 // Display Team Member Function
-// const displayMembers = (members) =>{
-//   members.forEach(member =>{
-//     let article = document.createElement("article");
+const displayMembers = (members) =>{
+  members.forEach(member =>{
+    let article = document.createElement("article");
 
-//     let memberName = document.createElement("h4");
-//     let memberName.textContent = member.name;
-//   });
+    let memberName = document.createElement("h4");
+    memberName.textContent = member.name;
+  });
 
-// };
+};
 
 // getTeams Function using Fetch
 const getTeams = async () => {
@@ -54,11 +54,11 @@ const getTeams = async () => {
 }
 
 // getTeamMembers Function using Fetch
-// const getTeamMembers = async () => {
-//   const response = await fetch("https://mholmes755.github.io/CSE121B/finalProject/theMarvelRoster.json");
-//   teamMembersList = await response.json();
-//   displayMembers(teamMembersList);
-// }
+  const getTeamMembers = async () => {
+  const response = await fetch("https://mholmes755.github.io/CSE121B/finalProject/theMarvelRoster.json");
+  teamMembersList = await response.json();
+  displayMembers(teamMembersList);
+}
 
 // Reset Function
 
