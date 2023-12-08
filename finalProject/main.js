@@ -36,15 +36,15 @@ const displayTeams = (teams) =>{
 
 
 // Display Team Member Function
-const displayMembers = (members) =>{
-  members.forEach(member =>{
-    let article = document.createElement("article");
+// const displayMembers = (members) =>{
+//   members.forEach(member =>{
+//     let article = document.createElement("article");
 
-    let memberName = document.createElement("h4");
-    memberName.textContent = member.name;
-  });
+//     let memberName = document.createElement("h4");
+//     memberName.textContent = member.name;
+//   });
 
-};
+// };
 
 // getTeams Function using Fetch
 const getTeams = async () => {
@@ -54,11 +54,11 @@ const getTeams = async () => {
 }
 
 // getTeamMembers Function using Fetch
-  const getTeamMembers = async () => {
-  const response = await fetch("https://mholmes755.github.io/CSE121B/finalProject/theMarvelRoster.json");
-  teamMembersList = await response.json();
-  displayMembers(teamMembersList);
-}
+//   const getTeamMembers = async () => {
+//   const response = await fetch("https://mholmes755.github.io/CSE121B/finalProject/theMarvelRoster.json");
+//   teamMembersList = await response.json();
+//   displayMembers(teamMembersList);
+// }
 
 // Reset Function
 
@@ -68,17 +68,22 @@ const reset = () => {
 
 // Sorting the Teams Function
 const sortBy = () =>{
-
   reset();
-  
-  const filter = document.getElementById('sortBy').value.toLowerCase();
+  const filter = document.getElementById('sortBy').value;
   switch (filter)
   {
     case "theAvengers":
-      let avengerTeam = teamList.filter(team => team.teamName.toLowerCase().includes("Avengers"));
+      let avengerTeam = teamList.filter(team => team.teamName.includes("Avengers"));
       displayTeams(avengerTeam);
       break;
     
+
+      // case "utah":
+      //   let utahTemples = templeList.filter(temple => temple.location.includes("Utah"));
+      //   displayTemples(utahTemples);
+      //   break;
+
+
     case "theGuardians":
       let guardiansTeam = teamList.filter(team => team.teamName.includes("Guardians"));
       displayTeams(guardiansTeam);
