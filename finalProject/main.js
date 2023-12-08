@@ -18,32 +18,33 @@ const displayTeams = (teams) =>{
 
 
         let first = document.createElement("p");
-        first.textContext = team.firstAppearance;
+        first.textContent = team.firstAppearance;
 
         let img = document.createElement("img");
         img.src = team.imgUrl;
         img.alt = team.teamName;
 
-        article.appendChild(h3);
+        article.appendChild(name);
         article.appendChild(motive);
         article.appendChild(first);
         article.appendChild(img);
 
         teamsElement.appendChild(article);
+        console.log(article);
     });
 };
 
 
 // Display Team Member Function
-const displayMembers = (members) =>{
-  members.forEach(member =>{
-    let article = document.createElement("article");
+// const displayMembers = (members) =>{
+//   members.forEach(member =>{
+//     let article = document.createElement("article");
 
-    let memberName = document.createElement("h4");
-    let memberName.textContent = member.name;
-  });
+//     let memberName = document.createElement("h4");
+//     let memberName.textContent = member.name;
+//   });
 
-};
+// };
 
 // getTeams Function using Fetch
 const getTeams = async () => {
@@ -53,11 +54,11 @@ const getTeams = async () => {
 }
 
 // getTeamMembers Function using Fetch
-const getTeamMembers = async () => {
-  const response = await fetch("https://mholmes755.github.io/CSE121B/finalProject/theMarvelRoster.json");
-  teamMembersList = await response.json();
-  displayMembers(teamMembersList);
-}
+// const getTeamMembers = async () => {
+//   const response = await fetch("https://mholmes755.github.io/CSE121B/finalProject/theMarvelRoster.json");
+//   teamMembersList = await response.json();
+//   displayMembers(teamMembersList);
+// }
 
 // Reset Function
 
@@ -65,20 +66,20 @@ const reset = () => {
   teamsElement.textContent = '';
 };
 
-// SortBy Function
+// Sorting the Teams Function
 const sortBy = () =>{
 
   reset();
   
-  const filter = document.getElementById('#sortBy').Value;
+  const filter = document.getElementById('sortBy').value.toLowerCase();
   switch (filter)
   {
     case "theAvengers":
-      let avengerTeam = teamList.filter(team => team.teamName.includes("Avengers"));
+      let avengerTeam = teamList.filter(team => team.teamName.toLowerCase().includes("Avengers"));
       displayTeams(avengerTeam);
       break;
     
-    case "guardiansOfTheGalaxy":
+    case "theGuardians":
       let guardiansTeam = teamList.filter(team => team.teamName.includes("Guardians"));
       displayTeams(guardiansTeam);
       break;
@@ -90,7 +91,7 @@ const sortBy = () =>{
 
     case "mastersOfEvil":
       let evilTeam = teamList.filter(team => team.teamName.includes("Evil"));
-      displayTeams(sinisterTeam);
+      displayTeams(evilTeam);
       break;
 
     case "all":

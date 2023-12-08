@@ -11,31 +11,41 @@
 
                 "memberName": "IronMan",
                 "memberAbilities": "Incredibly Smart, Super Rich, Electronic Armor, Flight, Energy Blasts, Fast Internet",
-                "alterEgo": "Tony Stark"
+                "alterEgo": "Tony Stark",
+                "imgUrl": "/images/ironMan.png"
+
             },
 
             {
                 "memberName": "Hulk",
                 "memberAbilities": "Incredibly Smart, Super Strong, Strength grows the Angrier he gets, Immune to Gama Poisoning",
-                "alterEgo": "Bruce Banner"
+                "alterEgo": "Bruce Banner",
+                "imgUrl": "/images/theHulk.png"
+
             },
 
             {
                 "memberName": "Thor",
                 "memberAbilities": "Incredibly Strong, Flight, Slight Immunity to Magic, Power to control Lightning",
-                "alterEgo": "Thor Odenson"
+                "alterEgo": "Thor Odenson",
+                "imgUrl": "/images/thor.png"
+
             },
 
             {
                 "memberName": "AntMan",
                 "memberAbilities": "Incredibly Smart, Suit that allows him to shrink or grow the space between molecules so that he can shrink or grow in size",
-                "alterEgo": "Hank Pym"
+                "alterEgo": "Hank Pym",
+                "imgUrl": "/images/antMan.png"
+
             },
 
             {
                 "memberName": "Wasp",
                 "memberAbilities": "Incredibly Smart, Suit that allows her to shrink the space between molecules so that she can shrink in size, blasts of energy",
-                "alterEgo": "Hank Pym"
+                "alterEgo": "Janet VanDyne",
+                "imgUrl": "/images/theWasp.png"
+
             },
 
     {
@@ -50,28 +60,36 @@
             {
                 "memberName": "Vance Astro",
                 "memberAbilities": "",
-                "alterEgo": "Hank Pym"
+                "alterEgo": "Hank Pym",
+                "imgUrl": ""
+
             },
 
             
             {
                 "memberName": "Martinex T'Naga",
                 "memberAbilities": "",
-                "alterEgo": "Hank Pym"
+                "alterEgo": "Hank Pym",
+                "imgUrl": ""
+
             },
 
                 
         {
             "memberName": "Captain Charlie-27",
             "memberAbilities": "",
-            "alterEgo": "Hank Pym"
+            "alterEgo": "Hank Pym",
+            "imgUrl": ""
+
         },
 
         
         {
             "memberName": "Captain Nikki",
             "memberAbilities": "",
-            "alterEgo": "Hank Pym"
+            "alterEgo": "Hank Pym",
+            "imgUrl": ""
+
         },
 
     {
@@ -85,38 +103,49 @@
             {
                 "memberName": "Doctor Octopus",
                 "memberAbilities": "",
-                "alterEgo": "Hank Pym"
+                "alterEgo": "Hank Pym",
+                "imgUrl": ""
             },
             
             {
                 "memberName": "Mysterio",
                 "memberAbilities": "",
-                "alterEgo": "Hank Pym"
+                "alterEgo": "Hank Pym",
+                "imgUrl": ""
+
             },
 
             
             {
                 "memberName": "Sandman",
                 "memberAbilities": "",
-                "alterEgo": "Hank Pym"
+                "alterEgo": "Hank Pym",
+                "imgUrl": ""
+
             },
 
             {
                 "memberName": "Kraven the Hunter",
                 "memberAbilities": "",
-                "alterEgo": "Hank Pym"
+                "alterEgo": "Hank Pym",
+                "imgUrl": ""
+
             },
 
             {
                 "memberName": "Vulture",
                 "memberAbilities": "",
-                "alterEgo": "Hank Pym"
+                "alterEgo": "Hank Pym",
+                "imgUrl": ""
+
             },
 
             {
                 "memberName": "Electro",
                 "memberAbilities": "",
-                "alterEgo": "Hank Pym"
+                "alterEgo": "Hank Pym",
+                "imgUrl": ""
+
             },
 
     {
