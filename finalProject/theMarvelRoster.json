@@ -6,6 +6,47 @@
         "imgUrl":"/images/avengers.png",
         "members": "IronMan, Hulk, Thor, AntMan, Wasp"
     },
+            {
+
+                "memberName": "IronMan",
+                "memberAbilities": "Incredibly Smart, Super Rich, Electronic Armor, Flight, Energy Blasts, Fast Internet",
+                "alterEgo": "Tony Stark",
+                "imgUrl": "/images/ironMan.png"
+
+            },
+
+            {
+                "memberName": "Hulk",
+                "memberAbilities": "Incredibly Smart, Super Strong, Strength grows the Angrier he gets, Immune to Gama Poisoning",
+                "alterEgo": "Bruce Banner",
+                "imgUrl": "/images/theHulk.png"
+
+            },
+
+            {
+                "memberName": "Thor",
+                "memberAbilities": "Incredibly Strong, Flight, Slight Immunity to Magic, Power to control Lightning",
+                "alterEgo": "Thor Odenson",
+                "imgUrl": "/images/thor.png"
+
+            },
+
+            {
+                "memberName": "AntMan",
+                "memberAbilities": "Incredibly Smart, Suit that allows him to shrink or grow the space between molecules so that he can shrink or grow in size",
+                "alterEgo": "Hank Pym",
+                "imgUrl": "/images/antMan.png"
+
+            },
+
+            {
+                "memberName": "Wasp",
+                "memberAbilities": "Incredibly Smart, Suit that allows her to shrink the space between molecules so that she can shrink in size, blasts of energy",
+                "alterEgo": "Janet VanDyne",
+                "imgUrl": "/images/theWasp.png"
+
+            },
+
             
     {
         "teamName": "The Guardians of the Galaxy",
@@ -14,20 +55,150 @@
         "imgUrl":"/images/guardiansOfTheGalaxy.png",
         "members": "Vance Astro, Martinex T'Naga, Captain Charlie-27, Captain Nikki"
     },
+            {
+                "memberName": "Vance Astro",
+                "memberAbilities": "Telekinesis, skilled in unarmed combat, battle strategist",
+                "alterEgo": "Hank Pym",
+                "imgUrl": "/images/vanceAstro.png"
+
+            },
+
+            
+            {
+                "memberName": "Martinex T'Naga",
+                "memberAbilities": "Super Strength, thermogenesis",
+                "alterEgo": "Martinex",
+                "imgUrl": "/images/martinexTNaga.png"
+
+            },
+
+                
+            {
+                "memberName": "Captain Charlie-27",
+                "memberAbilities": "Super strength, Density Variablility",
+                "alterEgo": "Captain-27 or Charlie-27",
+                "imgUrl": "/images/captainCharlie.png"
+
+            },
+
+
+            {
+                "memberName": "Captain Nikki",
+                "memberAbilities": "Enhanced Vision, Heat Resistance, Thermokinesis, Pyrokinesis, Superhuman Speed",
+                "alterEgo": "Nicholette Gold",
+                "imgUrl": "/images/captainNikki.png"
+
+            },
 
         
-                {
+    {
         "teamName": "The Sinister Six",
         "teamMotive": "Evil",
         "firstAppearance":"The Amazing Spider-Man Annual #1 | 1964",
         "imgUrl":"/images/sinisterSix.png",
         "members": "Doctor Octopus, Mysterio, Sandman, Kraven the Hunter, Vulture, Electro"
     },
+            
+            {
+                "memberName": "Doctor Octopus",
+                "memberAbilities": "Super Smart, A.I. powered attack arms ",
+                "alterEgo": "Otto Octavius",
+                "imgUrl": ""
+            },
+            
+            {
+                "memberName": "Mysterio",
+                "memberAbilities": "",
+                "alterEgo": "",
+                "imgUrl": ""
+
+            },
+
+            
+            {
+                "memberName": "Sandman",
+                "memberAbilities": "",
+                "alterEgo": "Frank Marco",
+                "imgUrl": ""
+
+            },
+
+            {
+                "memberName": "Kraven the Hunter",
+                "memberAbilities": "",
+                "alterEgo": "Hank Pym",
+                "imgUrl": ""
+
+            },
+
+            {
+                "memberName": "Vulture",
+                "memberAbilities": "",
+                "alterEgo": "Hank Pym",
+                "imgUrl": ""
+
+            },
+
+            {
+                "memberName": "Electro",
+                "memberAbilities": "",
+                "alterEgo": "Hank Pym",
+                "imgUrl": ""
+
+            },
+
+
     {
         "teamName": "The Masters of Evil",
         "teamMotive": "Evil",
         "firstAppearance":"Avengers #6 | 1964",
         "imgUrl":"/images/mastersOfEvil.png",
         "members": "Baron Zemo, The Black Knight, Melter, Radioactive Man, Enchantress, Executioner"
-    }       
+    },
+            {
+                "memberName": "Baron Zemo",
+                "memberAbilities": "",
+                "alterEgo": "",
+                "imgUrl": ""
+
+            },
+
+            {
+                "memberName": "The Black Knight",
+                "memberAbilities": "",
+                "alterEgo": "",
+                "imgUrl": ""
+
+            },
+
+            {
+                "memberName": "Melter",
+                "memberAbilities": "",
+                "alterEgo": "",
+                "imgUrl": ""
+
+            },
+
+            {
+                "memberName": "Radioactive Man",
+                "memberAbilities": "",
+                "alterEgo": "",
+                "imgUrl": ""
+
+            },
+            {
+                "memberName": "Enchantress",
+                "memberAbilities": "",
+                "alterEgo": "",
+                "imgUrl": ""
+
+            },
+            {
+                "memberName": "Executioner",
+                "memberAbilities": "",
+                "alterEgo": "",
+                "imgUrl": ""
+
+            }
+
 ]

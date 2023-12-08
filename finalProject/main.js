@@ -30,21 +30,31 @@ const displayTeams = (teams) =>{
         article.appendChild(img);
 
         teamsElement.appendChild(article);
-        // console.log(article);
     });
 };
 
 
 // Display Team Member Function
-// const displayMembers = (members) =>{
-//   members.forEach(member =>{
-//     let article = document.createElement("article");
+const displayMembers = (members) =>{
+  members.forEach(member =>{
+    let article = document.createElement("article");
 
-//     let memberName = document.createElement("h4");
-//     memberName.textContent = member.name;
-//   });
+    let name = document.createElement("h4");
+    name.textContent = member.memberName;
 
-// };
+    let abilities = document.createElement("ul");
+    abilities.textContent = member.memberAbilities;
+
+    let alterEgo = document.createElement("h4");
+    alterEgo.textContent = member.alterEgo;
+
+    let img = document.createElement("img");
+    img.src = member.imgUrl;
+    img.alt = team.memberName;
+
+  });
+
+};
 
 // getTeams Function using Fetch
 const getTeams = async () => {
@@ -53,15 +63,15 @@ const getTeams = async () => {
   displayTeams(teamList);
 }
 
+
 // getTeamMembers Function using Fetch
-//   const getTeamMembers = async () => {
-//   const response = await fetch("https://mholmes755.github.io/CSE121B/finalProject/theMarvelRoster.json");
-//   teamMembersList = await response.json();
-//   displayMembers(teamMembersList);
-// }
+  const getTeamMembers = async () => {
+  const response = await fetch("https://mholmes755.github.io/CSE121B/finalProject/theMarvelRoster.json");
+  teamMembersList = await response.json();
+  displayMembers(teamMembersList);
+}
 
 // Reset Function
-
 const reset = () => {
   teamsElement.textContent = '';
 };
@@ -99,6 +109,8 @@ const sortBy = () =>{
 
   }
 };
+
+// Sort the Team Members function
 
 
 // Selector Event Listener
