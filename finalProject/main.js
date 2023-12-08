@@ -77,13 +77,6 @@ const sortBy = () =>{
       displayTeams(avengerTeam);
       break;
     
-
-      // case "utah":
-      //   let utahTemples = templeList.filter(temple => temple.location.includes("Utah"));
-      //   displayTemples(utahTemples);
-      //   break;
-
-
     case "theGuardians":
       let guardiansTeam = teamList.filter(team => team.teamName.includes("Guardians"));
       displayTeams(guardiansTeam);
@@ -111,7 +104,7 @@ const sortBy = () =>{
 
 
 // Selector Event Listener
-document.querySelector('#sortBy').addEventListener("change", ()=> {sortBy(teamList)});
+document.querySelector("#sortBy").addEventListener("change", ()=> {sortBy(teamList)});
 
 
 // Team Event Listener
