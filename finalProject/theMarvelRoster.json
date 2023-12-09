@@ -4,28 +4,28 @@
         "teamMotive": "Good",
         "firstAppearance":"The Avengers #1 | 1963",
         "teamImgUrl":"/images/avengers.png",
-        "members": "IronMan, Hulk, Thor, AntMan, Wasp"
+        "members": "The Invincible Armored IronMan, The Incredible Hulk, Thor: God of Thunder, AntMan, The Wasp"
     },
             {
 
                 "memberName": "IronMan",
                 "memberAbilities": "Incredibly Smart, Super Rich, Electronic Armor, Flight, Energy Blasts, Fast Internet",
                 "alterEgo": "Tony Stark",
-                "imgUrl": "/images/ironMan.pn"
+                "imgUrl": "/images/ironMan.png"
             },
 
             {
                 "memberName": "Hulk",
                 "memberAbilities": "Incredibly Smart, Super Strong, Strength grows the Angrier he gets, Immune to Gama Poisoning",
                 "alterEgo": "Bruce Banner",
-                "imgUrl": "/images/theHulk.pn"
+                "imgUrl": "/images/theHulk.png"
             },
 
             {
                 "memberName": "Thor",
                 "memberAbilities": "Incredibly Strong, Flight, Slight Immunity to Magic, Power to control Lightning",
                 "alterEgo": "Thor Odenson",
-                "imgUrl": "/images/thor.pn"
+                "imgUrl": "/images/thor.png"
 
             },
 
@@ -33,7 +33,7 @@
                 "memberName": "AntMan",
                 "memberAbilities": "Incredibly Smart, Suit that allows him to shrink or grow the space between molecules so that he can shrink or grow in size",
                 "alterEgo": "Hank Pym",
-                "imgUrl": "/images/antMan.pn"
+                "imgUrl": "/images/antMan.png"
 
             },
 
@@ -41,7 +41,7 @@
                 "memberName": "Wasp",
                 "memberAbilities": "Incredibly Smart, Suit that allows her to shrink the space between molecules so that she can shrink in size, blasts of energy",
                 "alterEgo": "Janet VanDyne",
-                "imgUrl": "/images/theWasp.pn"
+                "imgUrl": "/images/theWasp.png"
 
             },
 
@@ -50,14 +50,14 @@
         "teamName": "The Guardians of the Galaxy",
         "teamMotive": "Good",
         "firstAppearance":"Marvel Super-Heroes #18 | 1969",
-        "teamImgUrl":"/images/guardiansOfTheGalaxy.pn",
+        "teamImgUrl":"/images/guardiansOfTheGalaxy.png",
         "members": "Vance Astro, Martinex T'Naga, Captain Charlie-27, Captain Nikki"
     },
             {
                 "memberName": "Vance Astro",
                 "memberAbilities": "Telekinesis, skilled in unarmed combat, battle strategist",
                 "alterEgo": "Hank Pym",
-                "imgUrl": "/images/vanceAstro.pn"
+                "imgUrl": "/images/vanceAstro.png"
 
             },
 
@@ -66,7 +66,7 @@
                 "memberName": "Martinex T'Naga",
                 "memberAbilities": "Super Strength, thermogenesis",
                 "alterEgo": "Martinex",
-                "imgUrl": "/images/martinexTNaga.pn"
+                "imgUrl": "/images/martinexTNaga.png"
 
             },
 
@@ -75,7 +75,7 @@
                 "memberName": "Captain Charlie-27",
                 "memberAbilities": "Super strength, Density Variablility",
                 "alterEgo": "Captain-27 or Charlie-27",
-                "imgUrl": "/images/captainCharlie.pn"
+                "imgUrl": "/images/captainCharlie.png"
 
             },
 
@@ -84,7 +84,7 @@
                 "memberName": "Captain Nikki",
                 "memberAbilities": "Enhanced Vision, Heat Resistance, Thermokinesis, Pyrokinesis, Superhuman Speed",
                 "alterEgo": "Nicholette Gold",
-                "imgUrl": "/images/captainNikki.pn"
+                "imgUrl": "/images/captainNikki.png"
 
             },
 

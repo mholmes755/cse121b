@@ -27,12 +27,12 @@ const displayTeams = (teams) =>{
         first.textContent = team.firstAppearance;
 
         let img = document.createElement("img");
-        img.src = team.imgUrl;
+        img.src = team.teamImgUrl;
         img.alt = team.teamName;
 
         article.appendChild(name);
         article.appendChild(motive);
-        article.appendChild(first);
+        // article.appendChild(first);
         article.appendChild(img);
 
         teamsElement.appendChild(article);
@@ -58,7 +58,7 @@ const displayMembers = (members) =>{
 
     let img = document.createElement("img");
     img.src = member.imgUrl;
-    img.alt = team.memberName;
+    img.alt = member.memberName;
 
     article.appendChild(name);
     article.appendChild(alterEgo)
@@ -80,11 +80,11 @@ const getTeams = async () => {
 
 
 // getTeamMembers Function using Fetch
-  // const getTeamMembers = async () => {
-  // const response2 = await fetch("https://mholmes755.github.io/CSE121B/finalProject/theMarvelRoster.json");
-  // teamMembersList = await response2.json();
-  // displayMembers(teamMembersList);
-// }
+  const getTeamMembers = async () => {
+  const response2 = await fetch("https://mholmes755.github.io/CSE121B/finalProject/theMarvelRoster.json");
+  teamMembersList = await response2.json();
+  displayMembers(teamMembersList);
+}
 
 
 
