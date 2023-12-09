@@ -3,13 +3,11 @@ const teamsElement = document.getElementById("teams");
 let teamList = {};
 const membersElement = document.getElementById("members");
 let teamMembersList = {};
-let selectedTeam = '';
-
 
 // Reset Function
 const reset = () => {
   teamsElement.textContent = '';
-
+  
 };
 
 // Display Teams Function
@@ -43,35 +41,35 @@ const displayTeams = (teams) =>{
 
 
 // Display Team Member Function
-const displayMembers = (members) =>{
-  membersElement.textContent = '';
+// const displayMembers = (members) =>{
+//   membersElement.textContent = '';
 
-  members.forEach(member =>{
-    let article = document.createElement("article");
+//   members.forEach(member =>{
+//     let article = document.createElement("article");
 
-    let name = document.createElement("h4");
-    name.textContent = member.memberName;
+//     let name = document.createElement("h4");
+//     name.textContent = member.memberName;
 
-    let abilities = document.createElement("ul");
-    abilities.textContent = member.memberAbilities;
+//     let abilities = document.createElement("ul");
+//     abilities.textContent = member.memberAbilities;
 
-    let alterEgo = document.createElement("h4");
-    alterEgo.textContent = member.alterEgo;
+//     let alterEgo = document.createElement("h4");
+//     alterEgo.textContent = member.alterEgo;
 
-    let img = document.createElement("img");
-    img.src = member.imgUrl;
-    img.alt = team.memberName;
+//     let img = document.createElement("img");
+//     img.src = member.imgUrl;
+//     img.alt = team.memberName;
 
-    article.appendChild(name);
-    article.appendChild(alterEgo);
-    article.appendChild(abilities);
-    article.appendChild(img);
+//     article.appendChild(name);
+//     article.appendChild(alterEgo)
+//     article.appendChild(abilities);
+//     article.appendChild(img);
 
-    membersElement.appendChild(article);
+//     membersElement.appendChild(article);
 
-  });
+//   });
 
-};
+// };
 
 // getTeams Function using Fetch
 const getTeams = async () => {
@@ -82,47 +80,42 @@ const getTeams = async () => {
 
 
 // getTeamMembers Function using Fetch
-  const getTeamMembers = async () => {
-  const response2 = await fetch("https://mholmes755.github.io/CSE121B/finalProject/theMarvelRoster.json");
-  teamMembersList = await response2.json();
-  displayMembers(teamMembersList);
-}
+  // const getTeamMembers = async () => {
+  // const response2 = await fetch("https://mholmes755.github.io/CSE121B/finalProject/theMarvelRoster.json");
+  // teamMembersList = await response2.json();
+  // displayMembers(teamMembersList);
+// }
 
 
 
 // Sorting the Teams Function
 const sortTeamsBy = () =>{
   reset();
-  const filter1 = document.getElementById('sortBy').value;
-  switch (filter1)
+  const filter = document.getElementById('sortBy').value;
+  switch (filter)
   {
     case "theAvengers":
-      // let avengerTeam = teamList.filter(team => team.teamName.includes("Avengers"));
-      // displayTeams(avengerTeam);
-      selectedTeam = "The Avengers";
+      let avengerTeam = teamList.filter(team => team.teamName.includes("Avengers"));
+      displayTeams(avengerTeam);
       break;
-
+    
     case "theGuardians":
-      // let guardiansTeam = teamList.filter(team => team.teamName.includes("Guardians"));
-      // displayTeams(guardiansTeam);
-      selectedTeam = "The Guarduans of the Galaxy"
+      let guardiansTeam = teamList.filter(team => team.teamName.includes("Guardians"));
+      displayTeams(guardiansTeam);
       break;
 
     case "sinisterSix":
-      // let sinisterTeam = teamList.filter(team => team.teamName.includes("Sinister"));
-      // displayTeams(sinisterTeam);
-      selectedTeam = "The Sinister Six";
+      let sinisterTeam = teamList.filter(team => team.teamName.includes("Sinister"));
+      displayTeams(sinisterTeam);
       break;
 
     case "mastersOfEvil":
-      // let evilTeam = teamList.filter(team => team.teamName.includes("Evil"));
-      // displayTeams(evilTeam);
-      selectedTeam = "The Masters of Evil"
+      let evilTeam = teamList.filter(team => team.teamName.includes("Evil"));
+      displayTeams(evilTeam);
       break;
 
     case "all":
-      // displayTeams(teamList);
-      selectedTeam = "";
+      displayTeams(teamList);
       break;
 
 
@@ -141,4 +134,4 @@ document.querySelector("#sortBy").addEventListener("change", ()=> {sortTeamsBy(t
 
 // Call main function
 getTeams();
-getTeamMembers();
+
