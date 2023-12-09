@@ -1,8 +1,16 @@
 /* Declare and initialize global variabiles*/
 const teamsElement = document.getElementById("teams");
 let teamList = {};
+const membersElement = document.getElementById("members");
 let teamMembersList = {};
+let selectedTeam = '';
 
+
+// Reset Function
+const reset = () => {
+  teamsElement.textContent = '';
+
+};
 
 // Display Teams Function
 const displayTeams = (teams) =>{
@@ -36,6 +44,8 @@ const displayTeams = (teams) =>{
 
 // Display Team Member Function
 const displayMembers = (members) =>{
+  membersElement.textContent = '';
+
   members.forEach(member =>{
     let article = document.createElement("article");
 
@@ -52,58 +62,67 @@ const displayMembers = (members) =>{
     img.src = member.imgUrl;
     img.alt = team.memberName;
 
+    article.appendChild(name);
+    article.appendChild(alterEgo);
+    article.appendChild(abilities);
+    article.appendChild(img);
+
+    membersElement.appendChild(article);
+
   });
 
 };
 
 // getTeams Function using Fetch
 const getTeams = async () => {
-  const response = await fetch("https://mholmes755.github.io/CSE121B/finalProject/theMarvelRoster.json");
-  teamList = await response.json();
+  const response1 = await fetch("https://mholmes755.github.io/CSE121B/finalProject/theMarvelRoster.json");
+  teamList = await response1.json();
   displayTeams(teamList);
 }
 
 
 // getTeamMembers Function using Fetch
   const getTeamMembers = async () => {
-  const response = await fetch("https://mholmes755.github.io/CSE121B/finalProject/theMarvelRoster.json");
-  teamMembersList = await response.json();
+  const response2 = await fetch("https://mholmes755.github.io/CSE121B/finalProject/theMarvelRoster.json");
+  teamMembersList = await response2.json();
   displayMembers(teamMembersList);
 }
 
-// Reset Function
-const reset = () => {
-  teamsElement.textContent = '';
-};
+
 
 // Sorting the Teams Function
-const sortBy = () =>{
+const sortTeamsBy = () =>{
   reset();
-  const filter = document.getElementById('sortBy').value;
-  switch (filter)
+  const filter1 = document.getElementById('sortBy').value;
+  switch (filter1)
   {
     case "theAvengers":
-      let avengerTeam = teamList.filter(team => team.teamName.includes("Avengers"));
-      displayTeams(avengerTeam);
+      // let avengerTeam = teamList.filter(team => team.teamName.includes("Avengers"));
+      // displayTeams(avengerTeam);
+      selectedTeam = "The Avengers";
       break;
-    
+
     case "theGuardians":
-      let guardiansTeam = teamList.filter(team => team.teamName.includes("Guardians"));
-      displayTeams(guardiansTeam);
+      // let guardiansTeam = teamList.filter(team => team.teamName.includes("Guardians"));
+      // displayTeams(guardiansTeam);
+      selectedTeam = "The Guarduans of the Galaxy"
       break;
 
     case "sinisterSix":
-      let sinisterTeam = teamList.filter(team => team.teamName.includes("Sinister"));
-      displayTeams(sinisterTeam);
+      // let sinisterTeam = teamList.filter(team => team.teamName.includes("Sinister"));
+      // displayTeams(sinisterTeam);
+      selectedTeam = "The Sinister Six";
       break;
 
     case "mastersOfEvil":
-      let evilTeam = teamList.filter(team => team.teamName.includes("Evil"));
-      displayTeams(evilTeam);
+      // let evilTeam = teamList.filter(team => team.teamName.includes("Evil"));
+      // displayTeams(evilTeam);
+      selectedTeam = "The Masters of Evil"
       break;
 
     case "all":
-      displayTeams(teamList);
+      // displayTeams(teamList);
+      selectedTeam = "";
       break;
 
 
@@ -111,13 +130,15 @@ const sortBy = () =>{
 };
 
 // Sort the Team Members function
+// const sortMembersBy = () =>{
+//   const filter2 = document.getElementById('').value;
 
+// }
 
 // Selector Event Listener
-document.querySelector("#sortBy").addEventListener("change", ()=> {sortBy(teamList)});
+document.querySelector("#sortBy").addEventListener("change", ()=> {sortTeamsBy(teamList)});
 
-// Team Event Listener
 
 // Call main function
 getTeams();
-
+getTeamMembers();
