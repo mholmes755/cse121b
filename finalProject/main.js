@@ -41,35 +41,35 @@ const displayTeams = (teams) =>{
 
 
 // Display Team Member Function
-// const displayMembers = (members) =>{
-//   membersElement.textContent = '';
+const displayMembers = (members) =>{
+  membersElement.textContent = '';
 
-//   members.forEach(member =>{
-//     let article = document.createElement("article");
+  members.forEach(member =>{
+    let article = document.createElement("article");
 
-//     let name = document.createElement("h4");
-//     name.textContent = member.memberName;
+    let name = document.createElement("h4");
+    name.textContent = member.memberName;
 
-//     let abilities = document.createElement("ul");
-//     abilities.textContent = member.memberAbilities;
+    let abilities = document.createElement("ul");
+    abilities.textContent = member.memberAbilities;
 
-//     let alterEgo = document.createElement("h4");
-//     alterEgo.textContent = member.alterEgo;
+    let alterEgo = document.createElement("h4");
+    alterEgo.textContent = member.alterEgo;
 
-//     let img = document.createElement("img");
-//     img.src = member.imgUrl;
-//     img.alt = team.memberName;
+    let img = document.createElement("img");
+    img.src = member.imgUrl;
+    img.alt = team.memberName;
 
-//     article.appendChild(name);
-//     article.appendChild(alterEgo)
-//     article.appendChild(abilities);
-//     article.appendChild(img);
+    article.appendChild(name);
+    article.appendChild(alterEgo)
+    article.appendChild(abilities);
+    article.appendChild(img);
 
-//     membersElement.appendChild(article);
+    membersElement.appendChild(article);
 
-//   });
+  });
 
-// };
+};
 
 // getTeams Function using Fetch
 const getTeams = async () => {
