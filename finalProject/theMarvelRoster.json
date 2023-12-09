@@ -11,6 +11,7 @@
                 "memberName": "IronMan",
                 "memberAbilities": "Incredibly Smart, Super Rich, Electronic Armor, Flight, Energy Blasts, Fast Internet",
                 "alterEgo": "Tony Stark",
+                "teamAffiliation":"The Avengers",
                 "imgUrl": "/images/ironMan.png"
             },
 
@@ -18,6 +19,7 @@
                 "memberName": "Hulk",
                 "memberAbilities": "Incredibly Smart, Super Strong, Strength grows the Angrier he gets, Immune to Gama Poisoning",
                 "alterEgo": "Bruce Banner",
+                "teamAffiliation":"The Avengers",
                 "imgUrl": "/images/theHulk.png"
             },
 
@@ -25,6 +27,7 @@
                 "memberName": "Thor",
                 "memberAbilities": "Incredibly Strong, Flight, Slight Immunity to Magic, Power to control Lightning",
                 "alterEgo": "Thor Odenson",
+                "teamAffiliation":"The Avengers",
                 "imgUrl": "/images/thor.png"
 
             },
@@ -33,6 +36,7 @@
                 "memberName": "AntMan",
                 "memberAbilities": "Incredibly Smart, Suit that allows him to shrink or grow the space between molecules so that he can shrink or grow in size",
                 "alterEgo": "Hank Pym",
+                "teamAffiliation":"The Avengers",
                 "imgUrl": "/images/antMan.png"
 
             },
@@ -41,6 +45,7 @@
                 "memberName": "Wasp",
                 "memberAbilities": "Incredibly Smart, Suit that allows her to shrink the space between molecules so that she can shrink in size, blasts of energy",
                 "alterEgo": "Janet VanDyne",
+                "teamAffiliation":"The Avengers",
                 "imgUrl": "/images/theWasp.png"
 
             },
@@ -56,7 +61,8 @@
             {
                 "memberName": "Vance Astro",
                 "memberAbilities": "Telekinesis, skilled in unarmed combat, battle strategist",
-                "alterEgo": "Hank Pym",
+                "alterEgo": "Vance Astro",
+                "teamAffiliation": "The Guardians of the Galaxy",
                 "imgUrl": "/images/vanceAstro.png"
 
             },
@@ -66,6 +72,7 @@
                 "memberName": "Martinex T'Naga",
                 "memberAbilities": "Super Strength, thermogenesis",
                 "alterEgo": "Martinex",
+                "teamAffiliation": "The Guardians of the Galaxy",
                 "imgUrl": "/images/martinexTNaga.png"
 
             },
@@ -75,6 +82,7 @@
                 "memberName": "Captain Charlie-27",
                 "memberAbilities": "Super strength, Density Variablility",
                 "alterEgo": "Captain-27 or Charlie-27",
+                "teamAffiliation": "The Guardians of the Galaxy",
                 "imgUrl": "/images/captainCharlie.png"
 
             },
@@ -84,6 +92,7 @@
                 "memberName": "Captain Nikki",
                 "memberAbilities": "Enhanced Vision, Heat Resistance, Thermokinesis, Pyrokinesis, Superhuman Speed",
                 "alterEgo": "Nicholette Gold",
+                "teamAffiliation": "The Guardians of the Galaxy",
                 "imgUrl": "/images/captainNikki.png"
 
             },
@@ -101,6 +110,7 @@
                 "memberName": "Doctor Octopus",
                 "memberAbilities": "Super Smart, A.I. powered attack arms ",
                 "alterEgo": "Otto Octavius",
+                "teamAffiliation": "The Sinister Six",
                 "imgUrl": ""
             },
             
@@ -108,6 +118,7 @@
                 "memberName": "Mysterio",
                 "memberAbilities": "",
                 "alterEgo": "",
+                "teamAffiliation": "The Sinister Six",
                 "imgUrl": ""
 
             },
@@ -117,6 +128,7 @@
                 "memberName": "Sandman",
                 "memberAbilities": "",
                 "alterEgo": "Frank Marco",
+                "teamAffiliation": "The Sinister Six",
                 "imgUrl": ""
 
             },
@@ -124,7 +136,8 @@
             {
                 "memberName": "Kraven the Hunter",
                 "memberAbilities": "",
-                "alterEgo": "Hank Pym",
+                "alterEgo": "",
+                "teamAffiliation": "The Sinister Six",
                 "imgUrl": ""
 
             },
@@ -133,6 +146,7 @@
                 "memberName": "Vulture",
                 "memberAbilities": "",
                 "alterEgo": "Hank Pym",
+                "teamAffiliation": "The Sinister Six",
                 "imgUrl": ""
 
             },
@@ -141,6 +155,7 @@
                 "memberName": "Electro",
                 "memberAbilities": "",
                 "alterEgo": "Hank Pym",
+                "teamAffiliation": "The Sinister Six",
                 "imgUrl": ""
 
             },
@@ -157,6 +172,7 @@
                 "memberName": "Baron Zemo",
                 "memberAbilities": "",
                 "alterEgo": "",
+                "teamAffiliation": "The Masters of Evil",
                 "imgUrl": ""
 
             },
@@ -165,6 +181,7 @@
                 "memberName": "The Black Knight",
                 "memberAbilities": "",
                 "alterEgo": "",
+                "teamAffiliation": "The Masters of Evil",
                 "imgUrl": ""
 
             },
@@ -173,6 +190,7 @@
                 "memberName": "Melter",
                 "memberAbilities": "",
                 "alterEgo": "",
+                "teamAffiliation": "The Masters of Evil",
                 "imgUrl": ""
 
             },
@@ -181,6 +199,7 @@
                 "memberName": "Radioactive Man",
                 "memberAbilities": "",
                 "alterEgo": "",
+                "teamAffiliation": "The Masters of Evil",
                 "imgUrl": ""
 
             },
@@ -188,6 +207,7 @@
                 "memberName": "Enchantress",
                 "memberAbilities": "",
                 "alterEgo": "",
+                "teamAffiliation": "The Masters of Evil",
                 "imgUrl": ""
 
             },
@@ -195,6 +215,7 @@
                 "memberName": "Executioner",
                 "memberAbilities": "",
                 "alterEgo": "",
+                "teamAffiliation": "The Masters of Evil",
                 "imgUrl": ""
 
             }

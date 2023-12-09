@@ -91,27 +91,35 @@ const getTeams = async () => {
 // Sorting the Teams Function
 const sortTeamsBy = () =>{
   reset();
-  const filter = document.getElementById('sortBy').value;
+  const filter = document.querySelector('#sortBy').value;
   switch (filter)
   {
     case "theAvengers":
       let avengerTeam = teamList.filter(team => team.teamName.includes("Avengers"));
+      memberFilter = teamMembersList.filter(member => member.teamAffiliation.includes("The Avengers"));
       displayTeams(avengerTeam);
+      displayMembers(memberFilter);
       break;
     
     case "theGuardians":
       let guardiansTeam = teamList.filter(team => team.teamName.includes("Guardians"));
+      memberFilter = teamMembersList.filter(member => member.teamAffiliation.includes("The Guardians of the Galaxy"));
       displayTeams(guardiansTeam);
+      displayMembers(memberFilter);
       break;
 
     case "sinisterSix":
       let sinisterTeam = teamList.filter(team => team.teamName.includes("Sinister"));
+      memberFilter = teamMembersList.filter(member => member.teamAffiliation.includes("The Sinister Six"));
       displayTeams(sinisterTeam);
+      displayMembers(memberFilter);
       break;
 
     case "mastersOfEvil":
       let evilTeam = teamList.filter(team => team.teamName.includes("Evil"));
+      memberFilter = teamMembersList.filter(member => member.teamAffiliation.includes("The Masters of Evil"));
       displayTeams(evilTeam);
+      displayMembers(memberFilter);
       break;
 
     case "all":
@@ -122,11 +130,7 @@ const sortTeamsBy = () =>{
   }
 };
 
-// Sort the Team Members function
-// const sortMembersBy = () =>{
-//   const filter2 = document.getElementById('').value;
 
-// }
 
 // Selector Event Listener
 document.querySelector("#sortBy").addEventListener("change", ()=> {sortTeamsBy(teamList)});
