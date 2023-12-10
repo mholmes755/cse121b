@@ -1,9 +1,9 @@
 /* Declare and initialize global variabiles*/
 const teamsElement = document.getElementById("teams");
 let teamList = {};
-// const membersElement = document.getElementById("members");
-// let teamMembersList = {};
-// let memberFilter = [];
+const membersElement = document.getElementById("members");
+let teamMembersList = {};
+let memberFilter = [];
 
 // Display Teams Function
 const displayTeams = (teams) =>{
@@ -36,35 +36,35 @@ const displayTeams = (teams) =>{
 
 
 // Display Team Member Function
-// const displayMembers = (members) =>{
-//   membersElement.textContent = '';
+const displayMembers = (members) =>{
+  membersElement.textContent = '';
 
-//   members.forEach(member =>{
-//     let article = document.createElement("article");
+  members.forEach(member =>{
+    let article = document.createElement("article");
 
-//     let name = document.createElement("h4");
-//     name.textContent = member.memberName;
+    let name = document.createElement("h4");
+    name.textContent = member.memberName;
 
-//     let abilities = document.createElement("ul");
-//     abilities.textContent = member.memberAbilities;
+    let abilities = document.createElement("ul");
+    abilities.textContent = member.memberAbilities;
 
-//     let alterEgo = document.createElement("h4");
-//     alterEgo.textContent = member.alterEgo;
+    let alterEgo = document.createElement("h4");
+    alterEgo.textContent = member.alterEgo;
 
-//     let img = document.createElement("img");
-//     img.src = member.imgUrl;
-//     img.alt = member.memberName;
+    let img = document.createElement("img");
+    img.src = member.imgUrl;
+    img.alt = member.memberName;
 
-//     article.appendChild(name);
-//     article.appendChild(alterEgo)
-//     article.appendChild(abilities);
-//     article.appendChild(img);
+    article.appendChild(name);
+    article.appendChild(alterEgo)
+    article.appendChild(abilities);
+    article.appendChild(img);
 
-//     membersElement.appendChild(article);
+    membersElement.appendChild(article);
 
-//   });
+  });
 
-// };
+};
 
 // getTeams Function using Fetch
 const getTeams = async () => {
@@ -75,11 +75,11 @@ const getTeams = async () => {
 
 
 // getTeamMembers Function using Fetch
-//   const getTeamMembers = async () => {
-//   const response2 = await fetch("https://mholmes755.github.io/CSE121B/finalProject/theMarvelRoster.json")
-//   teamMembersList = await response2.json();
-//   displayMembers(teamMembersList);
-// }
+  const getTeamMembers = async () => {
+  const response2 = await fetch("https://mholmes755.github.io/CSE121B/finalProject/theMarvelRoster.json")
+  teamMembersList = await response2.json();
+  displayMembers(teamMembersList);
+}
 
 // Reset Function
 const reset = () => {
@@ -88,46 +88,46 @@ const reset = () => {
 };
 
 // Sorting the Teams Function
-// const sortBy = () =>{
-//   reset();
-//   const filter = document.getElementById('sortBy').value;
-//   switch (filter)
-//   {
-//     case "theAvengers":
-//       let avengerTeam = teamList.filter(team => team.teamName.includes("Avengers"));
-//       // memberFilter = teamMembersList.filter(member => member.teamAffiliation.includes("The Avengers"));
-//       displayTeams(avengerTeam);
-//       // displayMembers(memberFilter);
-//       break;
+const sortBy = () =>{
+  reset();
+  const filter = document.getElementById('sortBy').value;
+  switch (filter)
+  {
+    case "theAvengers":
+      let avengerTeam = teamList.filter(team => team.teamName.includes("Avengers"));
+      // memberFilter = teamMembersList.filter(member => member.teamAffiliation.includes("The Avengers"));
+      displayTeams(avengerTeam);
+      // displayMembers(memberFilter);
+      break;
     
-//     case "theGuardians":
-//       let guardiansTeam = teamList.filter(team => team.teamName.includes("Guardians"));
-//       // memberFilter = teamMembersList.filter(member => member.teamAffiliation.includes("The Guardians of the Galaxy"));
-//       displayTeams(guardiansTeam);
-//       // displayMembers(memberFilter);
-//       break;
+    case "theGuardians":
+      let guardiansTeam = teamList.filter(team => team.teamName.includes("Guardians"));
+      // memberFilter = teamMembersList.filter(member => member.teamAffiliation.includes("The Guardians of the Galaxy"));
+      displayTeams(guardiansTeam);
+      // displayMembers(memberFilter);
+      break;
 
-//     case "sinisterSix":
-//       let sinisterTeam = teamList.filter(team => team.teamName.includes("Sinister"));
-//       // memberFilter = teamMembersList.filter(member => member.teamAffiliation.includes("The Sinister Six"));
-//       displayTeams(sinisterTeam);
-//       // displayMembers(memberFilter);
-//       break;
+    case "sinisterSix":
+      let sinisterTeam = teamList.filter(team => team.teamName.includes("Sinister"));
+      // memberFilter = teamMembersList.filter(member => member.teamAffiliation.includes("The Sinister Six"));
+      displayTeams(sinisterTeam);
+      // displayMembers(memberFilter);
+      break;
 
-//     case "mastersOfEvil":
-//       let evilTeam = teamList.filter(team => team.teamName.includes("Evil"));
-//       // memberFilter = teamMembersList.filter(member => member.teamAffiliation.includes("The Masters of Evil"));
-//       displayTeams(evilTeam);
-//       // displayMembers(memberFilter);
-//       break;
+    case "mastersOfEvil":
+      let evilTeam = teamList.filter(team => team.teamName.includes("Evil"));
+      // memberFilter = teamMembersList.filter(member => member.teamAffiliation.includes("The Masters of Evil"));
+      displayTeams(evilTeam);
+      // displayMembers(memberFilter);
+      break;
 
-//     case "all":
-//       displayTeams(teamList);
-//       break;
+    case "all":
+      displayTeams(teamList);
+      break;
 
 
-//   }
-// };
+  }
+};
 
 
 
