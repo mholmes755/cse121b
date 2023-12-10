@@ -75,11 +75,11 @@ const getTeams = async () => {
 
 
 // getTeamMembers Function using Fetch
-  const getTeamMembers = async () => {
-  const response2 = await fetch("https://mholmes755.github.io/CSE121B/finalProject/theMarvelRoster.json")
-  teamMembersList = await response2.json();
-  displayMembers(teamMembersList);
-};
+//   const getTeamMembers = async () => {
+//   const response2 = await fetch("https://mholmes755.github.io/CSE121B/finalProject/theMarvelRoster.json")
+//   teamMembersList = await response2.json();
+//   displayMembers(teamMembersList);
+// };
 
 // Reset Function
 const reset = () => {
