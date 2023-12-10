@@ -173,50 +173,50 @@
                 "memberAbilities": "",
                 "alterEgo": "",
                 "teamAffiliation": "The Masters of Evil",
-                "imgUrl": ""
+                "imgUrl": "/images/zemo.png"
 
             },
 
             {
                 "memberName": "The Black Knight",
-                "memberAbilities": "",
-                "alterEgo": "",
+                "memberAbilities": "Heightened physical strength and stamina, enchanted blade",
+                "alterEgo": "Dane Whittman",
                 "teamAffiliation": "The Masters of Evil",
-                "imgUrl": ""
+                "imgUrl": "/images/theBlackKnight.png"
 
             },
 
             {
                 "memberName": "Melter",
-                "memberAbilities": "",
-                "alterEgo": "",
+                "memberAbilities": "Can melt any metal",
+                "alterEgo": "Bruno Horgan",
                 "teamAffiliation": "The Masters of Evil",
-                "imgUrl": ""
+                "imgUrl": "/images/melter.png"
 
             },
 
             {
                 "memberName": "Radioactive Man",
-                "memberAbilities": "",
-                "alterEgo": "",
+                "memberAbilities": "Absorb radiation to enhance strength or carteurize wounds, emit radiation as heat or give others radiation poisoning. ",
+                "alterEgo": "Chen Lu",
                 "teamAffiliation": "The Masters of Evil",
-                "imgUrl": ""
+                "imgUrl": "/images/radioactiveMan.png"
 
             },
             {
                 "memberName": "Enchantress",
-                "memberAbilities": "",
-                "alterEgo": "",
+                "memberAbilities": "Magical Abilities",
+                "alterEgo": "Aurora",
                 "teamAffiliation": "The Masters of Evil",
-                "imgUrl": ""
+                "imgUrl": "/images/theEnchantress.png"
 
             },
             {
                 "memberName": "Executioner",
-                "memberAbilities": "",
-                "alterEgo": "",
+                "memberAbilities": "Enchanted Blade, Asguardian Strength",
+                "alterEgo": "Skurge",
                 "teamAffiliation": "The Masters of Evil",
-                "imgUrl": ""
+                "imgUrl": "/images/theExecutioner.png"
 
             }
 

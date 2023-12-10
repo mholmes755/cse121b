@@ -45,7 +45,7 @@ const displayMembers = (members) =>{
     let name = document.createElement("h4");
     name.textContent = member.memberName;
 
-    let abilities = document.createElement("ul");
+    let abilities = document.createElement("p");
     abilities.textContent = member.memberAbilities;
 
     let alterEgo = document.createElement("h4");
@@ -71,7 +71,7 @@ const getTeams = async () => {
   const response1 = await fetch("https://mholmes755.github.io/CSE121B/finalProject/theMarvelRoster.json")
   teamList = await response1.json();
   displayTeams(teamList);
-}
+};
 
 
 // getTeamMembers Function using Fetch
@@ -79,11 +79,12 @@ const getTeams = async () => {
   const response2 = await fetch("https://mholmes755.github.io/CSE121B/finalProject/theMarvelRoster.json")
   teamMembersList = await response2.json();
   displayMembers(teamMembersList);
-}
+};
 
 // Reset Function
 const reset = () => {
   teamsElement.textContent = '';
+  membersElement.textContent = '';
   
 };
 
@@ -91,31 +92,41 @@ const reset = () => {
 const sortBy = () =>{
   reset();
   const filter = document.getElementById('sortBy').value;
+  console.log("Selected Filter: ", filter);
   switch (filter)
   {
     case "theAvengers":
-      let avengerTeam = teamList.filter(team => team.teamName.includes("Avengers"));
+      // let avengerTeam = teamList.filter(team => team.teamName.includes('Avengers'));
+      let avengerTeam = teamList.filter(team => team && team.teamName && team.teamName.includes("Avengers"));
+
       // memberFilter = teamMembersList.filter(member => member.teamAffiliation.includes("The Avengers"));
       displayTeams(avengerTeam);
       // displayMembers(memberFilter);
       break;
-    
+
+      
     case "theGuardians":
-      let guardiansTeam = teamList.filter(team => team.teamName.includes("Guardians"));
+      // let guardiansTeam = teamList.filter(team => team.teamName.includes("Guardians"));
+      let guardiansTeam = teamList.filter(team => team && team.teamName && team.teamName.includes("Guardians"));
+
       // memberFilter = teamMembersList.filter(member => member.teamAffiliation.includes("The Guardians of the Galaxy"));
       displayTeams(guardiansTeam);
       // displayMembers(memberFilter);
       break;
 
     case "sinisterSix":
-      let sinisterTeam = teamList.filter(team => team.teamName.includes("Sinister"));
+      // let sinisterTeam = teamList.filter(team => team.teamName.includes("Sinister"));
+      let sinisterTeam = teamList.filter(team => team && team.teamName && team.teamName.includes("Sinister"));
+
       // memberFilter = teamMembersList.filter(member => member.teamAffiliation.includes("The Sinister Six"));
       displayTeams(sinisterTeam);
       // displayMembers(memberFilter);
       break;
 
     case "mastersOfEvil":
-      let evilTeam = teamList.filter(team => team.teamName.includes("Evil"));
+      // let evilTeam = teamList.filter(team => team.teamName.includes("Evil"));
+      let evilTeam = teamList.filter(team => team && team.teamName && team.teamName.includes("Evil"));
+
       // memberFilter = teamMembersList.filter(member => member.teamAffiliation.includes("The Masters of Evil"));
       displayTeams(evilTeam);
       // displayMembers(memberFilter);
