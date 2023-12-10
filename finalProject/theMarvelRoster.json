@@ -136,7 +136,7 @@
             {
                 "memberName": "Kraven the Hunter",
                 "memberAbilities": "",
-                "alterEgo": "",
+                "alterEgo": "Sergei Kravinoff",
                 "teamAffiliation": "The Sinister Six",
                 "imgUrl": ""
 
@@ -144,8 +144,8 @@
 
             {
                 "memberName": "Vulture",
-                "memberAbilities": "",
-                "alterEgo": "Hank Pym",
+                "memberAbilities": "Flight, Super Strength",
+                "alterEgo": "Adrian Toomes",
                 "teamAffiliation": "The Sinister Six",
                 "imgUrl": ""
 
@@ -153,8 +153,8 @@
 
             {
                 "memberName": "Electro",
-                "memberAbilities": "",
-                "alterEgo": "Hank Pym",
+                "memberAbilities": "Electricity. Can absorb and shoot it from his body",
+                "alterEgo": "Maxwell Dillon",
                 "teamAffiliation": "The Sinister Six",
                 "imgUrl": ""
 

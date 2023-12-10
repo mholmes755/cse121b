@@ -3,6 +3,7 @@ const teamsElement = document.getElementById("teams");
 let teamList = {};
 const membersElement = document.getElementById("members");
 let teamMembersList = {};
+let memberFilter = [];
 
 // Reset Function
 const reset = () => {
@@ -41,57 +42,57 @@ const displayTeams = (teams) =>{
 
 
 // Display Team Member Function
-const displayMembers = (members) =>{
-  membersElement.textContent = '';
+// const displayMembers = (members) =>{
+//   membersElement.textContent = '';
 
-  members.forEach(member =>{
-    let article = document.createElement("article");
+//   members.forEach(member =>{
+//     let article = document.createElement("article");
 
-    let name = document.createElement("h4");
-    name.textContent = member.memberName;
+//     let name = document.createElement("h4");
+//     name.textContent = member.memberName;
 
-    let abilities = document.createElement("ul");
-    abilities.textContent = member.memberAbilities;
+//     let abilities = document.createElement("ul");
+//     abilities.textContent = member.memberAbilities;
 
-    let alterEgo = document.createElement("h4");
-    alterEgo.textContent = member.alterEgo;
+//     let alterEgo = document.createElement("h4");
+//     alterEgo.textContent = member.alterEgo;
 
-    let img = document.createElement("img");
-    img.src = member.imgUrl;
-    img.alt = member.memberName;
+//     let img = document.createElement("img");
+//     img.src = member.imgUrl;
+//     img.alt = member.memberName;
 
-    article.appendChild(name);
-    article.appendChild(alterEgo)
-    article.appendChild(abilities);
-    article.appendChild(img);
+//     article.appendChild(name);
+//     article.appendChild(alterEgo)
+//     article.appendChild(abilities);
+//     article.appendChild(img);
 
-    membersElement.appendChild(article);
+//     membersElement.appendChild(article);
 
-  });
+//   });
 
-};
+// };
 
 // getTeams Function using Fetch
 const getTeams = async () => {
-  const response1 = await fetch("https://mholmes755.github.io/CSE121B/finalProject/theMarvelRoster.json");
+  const response1 = await fetch("https://mholmes755.github.io/CSE121B/finalProject/theMarvelRoster.json")
   teamList = await response1.json();
   displayTeams(teamList);
 }
 
 
 // getTeamMembers Function using Fetch
-  const getTeamMembers = async () => {
-  const response2 = await fetch("https://mholmes755.github.io/CSE121B/finalProject/theMarvelRoster.json");
-  teamMembersList = await response2.json();
-  displayMembers(teamMembersList);
-}
+//   const getTeamMembers = async () => {
+//   const response2 = await fetch("https://mholmes755.github.io/CSE121B/finalProject/theMarvelRoster.json")
+//   teamMembersList = await response2.json();
+//   displayMembers(teamMembersList);
+// }
 
 
 
 // Sorting the Teams Function
-const sortTeamsBy = () =>{
+const sortBy = () =>{
   reset();
-  const filter = document.querySelector('#sortBy').value;
+  const filter = document.getElementById('sortBy').value;
   switch (filter)
   {
     case "theAvengers":
@@ -124,6 +125,7 @@ const sortTeamsBy = () =>{
 
     case "all":
       displayTeams(teamList);
+      displayMembers(teamMembersList);
       break;
 
 
@@ -133,7 +135,7 @@ const sortTeamsBy = () =>{
 
 
 // Selector Event Listener
-document.querySelector("#sortBy").addEventListener("change", ()=> {sortTeamsBy(teamList)});
+document.querySelector("#sortBy").addEventListener("change", ()=> {sortBy(teamList)});
 
 
 // Call main function
