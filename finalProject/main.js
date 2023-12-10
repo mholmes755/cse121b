@@ -27,7 +27,7 @@ const displayTeams = (teams) =>{
 
         article.appendChild(name);
         article.appendChild(motive);
-        // article.appendChild(first);
+        article.appendChild(first);
         article.appendChild(img);
 
         teamsElement.appendChild(article);
@@ -36,39 +36,39 @@ const displayTeams = (teams) =>{
 
 
 // Display Team Member Function
-const displayMembers = (members) =>{
-  membersElement.textContent = '';
+// const displayMembers = (members) =>{
+//   membersElement.textContent = '';
 
-  members.forEach(member =>{
-    let article = document.createElement("article");
+//   members.forEach(member =>{
+//     let article = document.createElement("article");
 
-    let name = document.createElement("h4");
-    name.textContent = member.memberName;
+//     let name = document.createElement("h4");
+//     name.textContent = member.memberName;
 
-    let abilities = document.createElement("p");
-    abilities.textContent = member.memberAbilities;
+//     let abilities = document.createElement("p");
+//     abilities.textContent = member.memberAbilities;
 
-    let alterEgo = document.createElement("h4");
-    alterEgo.textContent = member.alterEgo;
+//     let alterEgo = document.createElement("h4");
+//     alterEgo.textContent = member.alterEgo;
 
-    let img = document.createElement("img");
-    img.src = member.imgUrl;
-    img.alt = member.memberName;
+//     let img = document.createElement("img");
+//     img.src = member.imgUrl;
+//     img.alt = member.memberName;
 
-    article.appendChild(name);
-    article.appendChild(alterEgo)
-    article.appendChild(abilities);
-    article.appendChild(img);
+//     article.appendChild(name);
+//     article.appendChild(alterEgo)
+//     article.appendChild(abilities);
+//     article.appendChild(img);
 
-    membersElement.appendChild(article);
+//     membersElement.appendChild(article);
 
-  });
+//   });
 
-};
+// };
 
 // getTeams Function using Fetch
 const getTeams = async () => {
-  const response1 = await fetch("https://mholmes755.github.io/CSE121B/finalProject/theMarvelRoster.json")
+  const response1 = await fetch("https://mholmes755.github.io/CSE121B/finalProject/teams.json")
   teamList = await response1.json();
   displayTeams(teamList);
 };
@@ -76,7 +76,7 @@ const getTeams = async () => {
 
 // getTeamMembers Function using Fetch
   const getTeamMembers = async () => {
-  const response2 = await fetch("https://mholmes755.github.io/CSE121B/finalProject/theMarvelRoster.json")
+  const response2 = await fetch("https://mholmes755.github.io/CSE121B/finalProject/members.json")
   teamMembersList = await response2.json();
   displayMembers(teamMembersList);
 };
