@@ -1,15 +1,9 @@
 /* Declare and initialize global variabiles*/
 const teamsElement = document.getElementById("teams");
 let teamList = {};
-const membersElement = document.getElementById("members");
-let teamMembersList = {};
-let memberFilter = [];
-
-// Reset Function
-const reset = () => {
-  teamsElement.textContent = '';
-  
-};
+// const membersElement = document.getElementById("members");
+// let teamMembersList = {};
+// let memberFilter = [];
 
 // Display Teams Function
 const displayTeams = (teams) =>{
@@ -87,50 +81,53 @@ const getTeams = async () => {
 //   displayMembers(teamMembersList);
 // }
 
-
+// Reset Function
+const reset = () => {
+  teamsElement.textContent = '';
+  
+};
 
 // Sorting the Teams Function
-const sortBy = () =>{
-  reset();
-  const filter = document.getElementById('sortBy').value;
-  switch (filter)
-  {
-    case "theAvengers":
-      let avengerTeam = teamList.filter(team => team.teamName.includes("Avengers"));
-      memberFilter = teamMembersList.filter(member => member.teamAffiliation.includes("The Avengers"));
-      displayTeams(avengerTeam);
-      displayMembers(memberFilter);
-      break;
+// const sortBy = () =>{
+//   reset();
+//   const filter = document.getElementById('sortBy').value;
+//   switch (filter)
+//   {
+//     case "theAvengers":
+//       let avengerTeam = teamList.filter(team => team.teamName.includes("Avengers"));
+//       // memberFilter = teamMembersList.filter(member => member.teamAffiliation.includes("The Avengers"));
+//       displayTeams(avengerTeam);
+//       // displayMembers(memberFilter);
+//       break;
     
-    case "theGuardians":
-      let guardiansTeam = teamList.filter(team => team.teamName.includes("Guardians"));
-      memberFilter = teamMembersList.filter(member => member.teamAffiliation.includes("The Guardians of the Galaxy"));
-      displayTeams(guardiansTeam);
-      displayMembers(memberFilter);
-      break;
+//     case "theGuardians":
+//       let guardiansTeam = teamList.filter(team => team.teamName.includes("Guardians"));
+//       // memberFilter = teamMembersList.filter(member => member.teamAffiliation.includes("The Guardians of the Galaxy"));
+//       displayTeams(guardiansTeam);
+//       // displayMembers(memberFilter);
+//       break;
 
-    case "sinisterSix":
-      let sinisterTeam = teamList.filter(team => team.teamName.includes("Sinister"));
-      memberFilter = teamMembersList.filter(member => member.teamAffiliation.includes("The Sinister Six"));
-      displayTeams(sinisterTeam);
-      displayMembers(memberFilter);
-      break;
+//     case "sinisterSix":
+//       let sinisterTeam = teamList.filter(team => team.teamName.includes("Sinister"));
+//       // memberFilter = teamMembersList.filter(member => member.teamAffiliation.includes("The Sinister Six"));
+//       displayTeams(sinisterTeam);
+//       // displayMembers(memberFilter);
+//       break;
 
-    case "mastersOfEvil":
-      let evilTeam = teamList.filter(team => team.teamName.includes("Evil"));
-      memberFilter = teamMembersList.filter(member => member.teamAffiliation.includes("The Masters of Evil"));
-      displayTeams(evilTeam);
-      displayMembers(memberFilter);
-      break;
+//     case "mastersOfEvil":
+//       let evilTeam = teamList.filter(team => team.teamName.includes("Evil"));
+//       // memberFilter = teamMembersList.filter(member => member.teamAffiliation.includes("The Masters of Evil"));
+//       displayTeams(evilTeam);
+//       // displayMembers(memberFilter);
+//       break;
 
-    case "all":
-      displayTeams(teamList);
-      displayMembers(teamMembersList);
-      break;
+//     case "all":
+//       displayTeams(teamList);
+//       break;
 
 
-  }
-};
+//   }
+// };
 
 
 
