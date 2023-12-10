@@ -68,7 +68,7 @@ const displayTeams = (teams) =>{
 
 // getTeams Function using Fetch
 const getTeams = async () => {
-  const response1 = await fetch("https://mholmes755.github.io/CSE121B/finalProject/teams.json")
+  const response1 = await fetch("https://mholmes755.github.io/CSE121B/finalProject/theMarvelRoster.json")
   teamList = await response1.json();
   displayTeams(teamList);
 };
@@ -76,7 +76,7 @@ const getTeams = async () => {
 
 // getTeamMembers Function using Fetch
   const getTeamMembers = async () => {
-  const response2 = await fetch("https://mholmes755.github.io/CSE121B/finalProject/members.json")
+  const response2 = await fetch("https://mholmes755.github.io/CSE121B/finalProject/theMarvelRoster.json")
   teamMembersList = await response2.json();
   displayMembers(teamMembersList);
 };
