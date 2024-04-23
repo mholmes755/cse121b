@@ -149,3 +149,13 @@ document.querySelector("#sortBy").addEventListener("change", ()=> {sortBy(teamLi
 // Call main function
 getTeams();
 
+
+
+
+/*
+hi
+*/
+
+var msg = '';
+msg.textValue = '';
+msg.text= '';
